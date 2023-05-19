@@ -13,12 +13,12 @@
       <h3 align="left" style="color: #70a5fd">Full Stack Developer</h3>
       <ul style="color: #bf91f3">
         <li><span style="color: #38bdae">HTML/CSS.</span></li>
-        <li><span style="color: #38bdae">Module 6. Form elements. Validation of forms.</span></li>
+        <li><span style="color: #38bdae">Module 7. Adaptive layout. Adaptive graphics.</span></li>
         <li>
           <a
-            href="https://haberserhii.github.io/goit-home-work-06/ "
+            href="https://haberserhii.github.io/goit-home-work-07/ "
             style="color: #38bdae; text-decoration: none"
-            >Homework #06 (click)</a
+            >Homework #07 (click)</a
           >
         </li>
       </ul>
