@@ -24,7 +24,6 @@
   <body>
     <!-- Site header -->
     <header class="header-page">
-      <!-- Menu navigation -->
       <div class="header-container container">
         <nav class="header-nav">
           <a class="nav-logo link" href="./index.html"
@@ -32,19 +31,16 @@
           >
           <ul class="nav-list list">
             <li>
-              <a href="./index.html" class="nav-link link">Studio</a>
+              <a href="./index.html" class="nav-link link active">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-link link active"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
             </li>
             <li>
               <a href="" class="nav-link link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <!-- Contact us -->
         <address class="header-address">
           <ul class="address-list list">
             <li>
@@ -59,6 +55,25 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -304,28 +319,40 @@
           <p class="footer-social-title">Social media</p>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
-              <a href="https://www.instagram.com/" class="footer-social-link">
+              <a
+                href="https://www.instagram.com/"
+                class="footer-social-link mobile-link"
+              >
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://twitter.com/" class="footer-social-link">
+              <a
+                href="https://twitter.com/"
+                class="footer-social-link mobile-link"
+              >
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://www.facebook.com/" class="footer-social-link">
+              <a
+                href="https://www.facebook.com/"
+                class="footer-social-link mobile-link"
+              >
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="https://linkedin.com" class="footer-social-link">
+              <a
+                href="https://linkedin.com"
+                class="footer-social-link mobile-link"
+              >
                 <svg class="footer-social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -335,7 +362,8 @@
         </div>
         <!-- Form -->
         <div class="form-field">
-          <form>
+          <form class="form">
+            <label class="footer-label" for="subscribe">Subscribe</label>
             <input
               class="footer-label-input"
               type="email"
@@ -343,9 +371,8 @@
               id="subscribe"
               placeholder="E-mail"
             />
-            <label class="footer-label" for="subscribe">Subscribe</label
-            ><button class="footer-form-button" type="submit">
-              <span class="button-name">Subscribe</span>
+            <button class="footer-form-button" type="submit">
+              Subscribe
               <svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-message"></use>
               </svg>
@@ -354,5 +381,82 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-button js-close-menu">
+        <svg class="modal-button-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="focus-item link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="focus-item link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="focus-item link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-adress list">
+        <li class="menu-adress-item">
+          <a href="tel:+110001111111" class="mobile-tel focus-item link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-email focus-item link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-social-list list mobile-list">
+        <li class="footer-social-item mobile-item">
+          <a
+            href="https://www.instagram.com/"
+            class="footer-social-link mobile-link"
+          >
+            <svg class="footer-social-icon mobile-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://twitter.com/" class="footer-social-link mobile-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            href="https://www.facebook.com/"
+            class="footer-social-link mobile-link"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://linkedin.com" class="footer-social-link mobile-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
