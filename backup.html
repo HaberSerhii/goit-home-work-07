@@ -22,13 +22,15 @@
   </head>
 
   <body>
+    <!-- Site header -->
     <header class="header-page">
+      <!-- Menu navigation -->
       <div class="header-container container">
         <nav class="header-nav">
           <a class="nav-logo link" href="./index.html"
             >Web<span class="nav-logo-part">Studio</span></a
           >
-          <ul class="nav-list list">
+          <ul class="nav-list list visually-hidden">
             <li>
               <a href="./index.html" class="nav-link link active">Studio</a>
             </li>
@@ -40,8 +42,9 @@
             </li>
           </ul>
         </nav>
+        <!-- Contact us -->
         <address class="header-address">
-          <ul class="address-list list">
+          <ul class="address-list list visually-hidden">
             <li>
               <a href="mailto:info@devstudio.com" class="address-contacts link"
                 >info@devstudio.com</a
@@ -54,29 +57,11 @@
             </li>
           </ul>
         </address>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
       </div>
     </header>
-
+    <!-- Main block -->
     <main>
+      <!-- Hero -->
       <section class="hero-section">
         <div class="hero-container container">
           <h1 class="title-first">Effective Solutions for Your Business</h1>
@@ -86,6 +71,7 @@
         </div>
       </section>
 
+      <!-- Features -->
       <section class="features-section">
         <div class="features-container container">
           <h2 class="title-second" hidden>Features</h2>
@@ -97,7 +83,7 @@
                 </svg>
               </div>
               <h3 class="title-third">Strategy</h3>
-              <p class="description features-mobile-description">
+              <p class="description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -121,7 +107,7 @@
                 </svg>
               </div>
               <h3 class="title-third">Diligence</h3>
-              <p class="description features-mobile-description">
+              <p class="description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -133,7 +119,7 @@
                 </svg>
               </div>
               <h3 class="title-third">Technologies</h3>
-              <p class="description features-mobile-description">
+              <p class="description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -141,7 +127,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Skills -->
       <section class="skills-section">
         <div class="skills-container container">
           <h2 class="title-second">What are we doing</h2>
@@ -162,7 +148,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Our team -->
       <section class="team-section">
         <div class="team-container container">
           <h2 class="title-second">Our Team</h2>
@@ -354,7 +340,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Customers -->
       <section class="customers-section">
         <div class="customer-container container">
           <h2 class="title-second customer-title">Customers</h2>
@@ -454,8 +440,7 @@
         </div>
         <!-- Form -->
         <div class="form-field">
-          <form class="form">
-            <label class="footer-label" for="subscribe">Subscribe</label>
+          <form>
             <input
               class="footer-label-input"
               type="email"
@@ -463,8 +448,9 @@
               id="subscribe"
               placeholder="E-mail"
             />
-            <button class="footer-form-button" type="submit">
-              Subscribe
+            <label class="footer-label" for="subscribe">Subscribe</label
+            ><button class="footer-form-button" type="submit">
+              <span class="button-name">Subscribe</span>
               <svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-message"></use>
               </svg>
@@ -569,82 +555,6 @@
         </div>
       </div>
     </div>
-    <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="modal-button js-close-menu">
-        <svg class="modal-button-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close-button"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu">
-        <li class="mobile-menu-item">
-          <a href="./index.html" class="focus-item link">Studio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="./portfolio.html" class="focus-item link">Portfolio</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="" class="focus-item link">Contacts</a>
-        </li>
-      </ul>
-      <ul class="mobile-adress list">
-        <li class="menu-adress-item">
-          <a href="tel:+110001111111" class="mobile-tel focus-item link"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li>
-          <a
-            href="mailto:info@devstudio.com"
-            class="mobile-email focus-item link"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="footer-social-list list mobile-list">
-        <li class="footer-social-item mobile-item">
-          <a
-            href="https://www.instagram.com/"
-            class="footer-social-link mobile-link"
-          >
-            <svg class="footer-social-icon mobile-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="https://twitter.com/" class="footer-social-link mobile-link">
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a
-            href="https://www.facebook.com/"
-            class="footer-social-link mobile-link"
-          >
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="https://linkedin.com" class="footer-social-link mobile-link">
-            <svg class="footer-social-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
