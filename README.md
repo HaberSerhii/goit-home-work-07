@@ -22,8 +22,6 @@
           >
         </li>
       </ul>
-    </div>
-    <img
-      style="height: auto; width: 50%; margin: 0px 0px 20px 5px"
-      src="https://github-readme-stats.vercel.app/api?username=HaberSerhii&custom_title=Haber&show_icons=true&theme=tokyonight&card_width=1000"
-    />
+<div align="left" style="margin-bottom: 40px;">
+   <a href=""><img src="https://github-readme-streak-stats.herokuapp.com/?user=HaberSerhii&hide_border=true&card_width=450&theme=tokyonight"/></a>
+</div>
