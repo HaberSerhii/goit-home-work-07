@@ -1304,7 +1304,7 @@ input.footer-label-input::placeholder {
   padding: 24px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.95);
+  transform: translate(-50%, -50%) scale(0.75);
   width: 320px;
   min-height: 576px;
   background-color: var(--modal-background-color);
@@ -1317,6 +1317,13 @@ input.footer-label-input::placeholder {
 @media only screen and (min-width: 768px) {
   .modal-window {
     width: 408px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal-window {
+    transform: translate(-50%, -50%) scale(1.3);
   }
 }
 
